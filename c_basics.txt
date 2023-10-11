@@ -1,0 +1,61 @@
+To include a library use: 
+
+#define <header.h>
+
+libraries used so far:
+stdio.h
+ctype.h
+string.h
+
+example:
+
+#define <stdio.h>
+
+
+
+C uses a main function structured as such:
+
+int main() {
+    return 0;
+}
+
+
+Function signatures need to be declared before main function:
+
+void foo(int a, int b);
+char* bar(int* a, char* b);
+
+int main() {
+    return 0;
+}
+
+void foo(int a, int b) {
+    . . .
+}
+
+char* bar (int* a, char* b) {
+    . . .
+}
+
+Or they can also be coded before the main function and no signature is required:
+
+
+void foo(int a, int b) {
+    . . .
+}
+
+char* bar (int* a, char* b) {
+    . . .
+}
+
+int main() {
+    return 0;
+}
+
+
+
+
+
+EOF = End of File
+\n = NEWLINE
+\0 = NULL TERMINATOR
